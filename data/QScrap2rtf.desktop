@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=0.1
+Name=QScrap2rtf
+Icon=/usr/share/qscrap2rtf/pixmaps/main.png
+Exec=qscrap2rtf
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Office;
+
+Name[ru]=QScrap2rtf

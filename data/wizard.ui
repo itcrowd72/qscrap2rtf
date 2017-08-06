@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Wizard</class>
+ <widget class="QWizard" name="Wizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>507</width>
+    <height>364</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>507</width>
+    <height>364</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QScrap2rtf 0.1</string>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::ModernStyle</enum>
+  </property>
+  <widget class="WizardPage1" name="wizardPage1"/>
+  <widget class="WizardPage2" name="wizardPage2"/>
+  <widget class="WizardPage3" name="wizardPage3"/>
+  <widget class="WizardPage4" name="wizardPage4"/>
+  <widget class="WizardPage5" name="wizardPage5"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
