@@ -9,7 +9,8 @@ SOURCES += src/main.cpp\
     src/wizardpage2.cpp \
     src/wizardpage3.cpp \
     src/wizardpage4.cpp \
-    src/wizardpage5.cpp
+    src/wizardpage5.cpp \
+    src/helpers.cpp
 
 HEADERS  += \
     src/wizard.h \
@@ -17,7 +18,8 @@ HEADERS  += \
     src/wizardpage2.h \
     src/wizardpage3.h \
     src/wizardpage4.h \
-    src/wizardpage5.h
+    src/wizardpage5.h \
+    src/helpers.h
 
 FORMS    += \
     data/wizard.ui \

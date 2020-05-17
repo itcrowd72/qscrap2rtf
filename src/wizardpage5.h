@@ -4,19 +4,18 @@
 #include <QWizardPage>
 
 namespace Ui {
-class WizardPage5;
+  class WizardPage5;
 }
 
-class WizardPage5 : public QWizardPage
-{
-    Q_OBJECT
-    
+class WizardPage5 : public QWizardPage {
+  Q_OBJECT
+
 public:
-    explicit WizardPage5(QWidget *parent = 0);
-    ~WizardPage5();
-    
+  explicit WizardPage5(QWidget *parent = 0);
+  ~WizardPage5();
+
 private:
-    Ui::WizardPage5 *ui;
+  Ui::WizardPage5 *ui;
 };
 
 #endif // WIZARDPAGE5_H
