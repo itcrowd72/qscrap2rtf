@@ -1,5 +1,0 @@
-If you want to install from sources:
-
-* qmake-qt4 QScrap2rtf.pro -r -spec linux-g++
-* make
-* sudo make install

@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui widgets
 
 TARGET = src/qscrap2rtf
 TEMPLATE = app
