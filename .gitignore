@@ -1,8 +1,6 @@
-TODO
-*.pro.user
+/TODO
 /Makefile
-*.pro.user.2.5pre1
-/src/qscrap2rtf
-*.o
-moc_*
-ui*.h
+*.pro.user
+*.pro.user.*
+/build/*
+ui_*.h

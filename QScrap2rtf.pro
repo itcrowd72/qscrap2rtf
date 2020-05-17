@@ -1,36 +1,36 @@
-QT       += core gui widgets
+QT += core gui widgets
 
-TARGET = src/qscrap2rtf
+TARGET = build/qscrap2rtf
 TEMPLATE = app
 
 SOURCES += src/main.cpp\
-    src/wizard.cpp \
-    src/wizardpage1.cpp \
-    src/wizardpage2.cpp \
-    src/wizardpage3.cpp \
-    src/wizardpage4.cpp \
-    src/wizardpage5.cpp \
-    src/helpers.cpp
+  src/wizard.cpp \
+  src/wizardpage1.cpp \
+  src/wizardpage2.cpp \
+  src/wizardpage3.cpp \
+  src/wizardpage4.cpp \
+  src/wizardpage5.cpp \
+  src/helpers.cpp
 
-HEADERS  += \
-    src/wizard.h \
-    src/wizardpage1.h \
-    src/wizardpage2.h \
-    src/wizardpage3.h \
-    src/wizardpage4.h \
-    src/wizardpage5.h \
-    src/helpers.h
+HEADERS += \
+  src/wizard.h \
+  src/wizardpage1.h \
+  src/wizardpage2.h \
+  src/wizardpage3.h \
+  src/wizardpage4.h \
+  src/wizardpage5.h \
+  src/helpers.h
 
-FORMS    += \
-    data/wizard.ui \
-    data/wizardpage1.ui \
-    data/wizardpage2.ui \
-    data/wizardpage3.ui \
-    data/wizardpage4.ui \
-    data/wizardpage5.ui
+FORMS += \
+  data/wizard.ui \
+  data/wizardpage1.ui \
+  data/wizardpage2.ui \
+  data/wizardpage3.ui \
+  data/wizardpage4.ui \
+  data/wizardpage5.ui
 
-OBJECTS_DIR = src
-MOC_DIR = src
+OBJECTS_DIR = build
+MOC_DIR = build
 UI_DIR = src
 
 INSTALLS += target pixmaps language_rus mainmenu
