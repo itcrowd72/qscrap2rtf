@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>QScrap2rtf 0.1</string>
+   <string>QScrap2rtf 0.2</string>
   </property>
   <property name="wizardStyle">
    <enum>QWizard::ModernStyle</enum>
