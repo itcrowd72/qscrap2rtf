@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QScrap2rtf is open source, cross platform software available for all major operating systems under the GNU General Public License. You can use QScrap2rtf on any computer, including a computer in a commercial organization. You don't need to register or pay for QScrap2rtf.&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;http://code.google.com/p/scrap2rtf/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://code.google.com/p/scrap2rtf/&lt;/span&gt;&lt;/a&gt; to check for updates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QScrap2rtf is open source, cross platform software available for all major operating systems under the GNU General Public License. You can use QScrap2rtf on any computer, including a computer in a commercial organization. You don't need to register or pay for QScrap2rtf.&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://github.com/ivnish/qscrap2rtf&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/ivnish/qscrap2rtf&lt;/span&gt;&lt;/a&gt; to check for updates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
