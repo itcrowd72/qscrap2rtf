@@ -10,6 +10,9 @@ Wizard::Wizard(QWidget *parent) :
   // Disable Back button on last page
   setOption(QWizard::DisabledBackButtonOnLastPage, true);
 
+  // Hide Cancel button on last page
+  setOption(QWizard::NoCancelButtonOnLastPage, true);
+
   // Set buttons namef for translate
   setButtonText(QWizard::BackButton,tr("< Back"));
   setButtonText(QWizard::NextButton,tr("Next >"));
