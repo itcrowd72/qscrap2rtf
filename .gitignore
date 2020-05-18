@@ -4,3 +4,4 @@
 *.pro.user.*
 /build/*
 ui_*.h
+/qscrap2rtf

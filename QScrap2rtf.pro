@@ -1,6 +1,6 @@
 QT += core gui widgets
 
-TARGET = build/qscrap2rtf
+TARGET = qscrap2rtf
 TEMPLATE = app
 
 SOURCES += src/main.cpp\
