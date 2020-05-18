@@ -57,11 +57,13 @@ void WizardPage2::on_pushButton_4_clicked() {
 
 // Remove file button
 void WizardPage2::on_pushButton_3_clicked() {
+  int currentItem = ui->listWidget->row(ui->listWidget->currentItem());
+
   // Remove selected item from list
-  szScrapNames.removeAt(ui->listWidget->row(ui->listWidget->currentItem()));
+  szScrapNames.removeAt(currentItem);
 
   // Remove selected item from listWidget
-  ui->listWidget->takeItem(ui->listWidget->row(ui->listWidget->currentItem()));
+  ui->listWidget->takeItem(currentItem);
 
   // exec isComplete() function
   emit completeChanged();

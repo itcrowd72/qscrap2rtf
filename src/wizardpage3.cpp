@@ -18,7 +18,7 @@ WizardPage3::WizardPage3(QWidget *parent): QWizardPage(parent), ui(new Ui::Wizar
     }
   #else
   #ifdef Q_OS_WIN32
-    szLogoPath = qApp->applicationDirPath()+"\\pixmaps\\main.png");
+    szLogoPath = qApp->applicationDirPath() + "\\pixmaps\\main.png");
   #endif
   #endif
 
@@ -39,10 +39,7 @@ WizardPage3::~WizardPage3() {
 // "Remove original" CheckBox clicked
 void WizardPage3::on_checkBox_stateChanged(int arg1) {
   // if checked
-  if (arg1 == 2)
-    bRemoveOriginal = true;
-  else
-    bRemoveOriginal = false;
+  bRemoveOriginal = (arg1 == 2);
 }
 //-------------------------------------------------------------------------
 
