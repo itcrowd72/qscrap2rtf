@@ -76,8 +76,14 @@ void WizardPage2::on_pushButton_clicked() {
   // Append file names to list
   szScrapNames += templist;
 
+  // Remove duplicates from list before render to listWidget
+  szScrapNames.removeDuplicates();
+
+  // Clear listWidget
+  ui->listWidget->clear();
+
   // Append file names to listWidget
-  ui->listWidget->addItems(templist);
+  ui->listWidget->addItems(szScrapNames);
 
   // Set first row after adding elements
   ui->listWidget->setCurrentRow(0);
@@ -109,8 +115,14 @@ void WizardPage2::on_pushButton_2_clicked() {
   // Append file names to list
   szScrapNames += templist;
 
+  // Remove duplicates from list before render to listWidget
+  szScrapNames.removeDuplicates();
+
+  // Clear listWidget
+  ui->listWidget->clear();
+
   // Append file names to listWidget
-  ui->listWidget->addItems(templist);
+  ui->listWidget->addItems(szScrapNames);
 
   // Set first row after adding elements
   ui->listWidget->setCurrentRow(0);
