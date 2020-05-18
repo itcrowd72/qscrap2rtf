@@ -2,18 +2,27 @@
 #include "ui_wizardpage2.h"
 #include <QFileDialog>
 #include "wizard.h"
+#include "helpers.h"
 
 WizardPage2::WizardPage2(QWidget *parent): QWizardPage(parent), ui(new Ui::WizardPage2) {
   ui->setupUi(this);
 
+  QString szLogoPath;
+
   // Set Logo to second page
   #ifdef Q_OS_LINUX
-    setPixmap(QWizard::LogoPixmap, QPixmap("/usr/share/qscrap2rtf/pixmaps/main.png"));
+    szLogoPath = "/usr/share/qscrap2rtf/pixmaps/main.png";
+
+    if (!FileExists(szLogoPath)) {
+      szLogoPath = qApp->applicationDirPath() + "/data/pixmaps/main.png";
+    }
   #else
   #ifdef Q_OS_WIN32
-    setPixmap(QWizard::LogoPixmap, QPixmap(qApp->applicationDirPath()+"\\pixmaps\\main.png"));
+    szLogoPath = qApp->applicationDirPath()+"\\pixmaps\\main.png");
   #endif
   #endif
+
+  setPixmap(QWizard::LogoPixmap, QPixmap(szLogoPath));
 }
 //-------------------------------------------------------------------------
 

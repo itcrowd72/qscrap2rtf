@@ -4,20 +4,29 @@
 #include <QTimer>
 #include <QProcess>
 #include <QTextCodec>
+#include "helpers.h"
 
 bool bWorkDone = false;     // if convert is done, then enable "Next" button
 
 WizardPage4::WizardPage4(QWidget *parent): QWizardPage(parent), ui(new Ui::WizardPage4) {
   ui->setupUi(this);
 
+  QString szLogoPath;
+
   // Set Logo to fourth page
   #ifdef Q_OS_LINUX
-    setPixmap(QWizard::LogoPixmap, QPixmap("/usr/share/qscrap2rtf/pixmaps/main.png"));
+    szLogoPath = "/usr/share/qscrap2rtf/pixmaps/main.png";
+
+    if (!FileExists(szLogoPath)) {
+      szLogoPath = qApp->applicationDirPath() + "/data/pixmaps/main.png";
+    }
   #else
   #ifdef Q_OS_WIN32
-    setPixmap(QWizard::LogoPixmap, QPixmap(qApp->applicationDirPath()+"\\pixmaps\\main.png"));
+    szLogoPath = qApp->applicationDirPath()+"\\pixmaps\\main.png");
   #endif
   #endif
+
+  setPixmap(QWizard::LogoPixmap, QPixmap(szLogoPath));
 }
 //-------------------------------------------------------------------------
 
