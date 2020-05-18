@@ -4,7 +4,7 @@
 #include <QWizardPage>
 
 namespace Ui {
-class WizardPage2;
+  class WizardPage2;
 }
 
 class WizardPage2 : public QWizardPage {
@@ -12,7 +12,7 @@ class WizardPage2 : public QWizardPage {
 
 public:
   explicit WizardPage2(QWidget *parent = 0);
-  bool isComplete()const;
+  bool isComplete() const;
   ~WizardPage2();
 
 private slots:

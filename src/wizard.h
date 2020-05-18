@@ -16,6 +16,7 @@ class Wizard : public QWizard {
 
 public:
   explicit Wizard(QWidget *parent = 0);
+  void reject();
   ~Wizard();
 
 private:

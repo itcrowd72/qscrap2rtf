@@ -13,7 +13,7 @@ class WizardPage1 : public QWizardPage {
 public:
   explicit WizardPage1(QWidget *parent = 0);
   ~WizardPage1();
-    
+
 private:
   Ui::WizardPage1 *ui;
 };

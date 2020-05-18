@@ -1,5 +1,6 @@
 #include "wizard.h"
 #include "ui_wizard.h"
+#include <QMessageBox>
 
 Wizard::Wizard(QWidget *parent) :
   QWizard(parent),
@@ -7,7 +8,7 @@ Wizard::Wizard(QWidget *parent) :
   ui->setupUi(this);
 
   // Disable Back button on last page
-  setOption( QWizard::DisabledBackButtonOnLastPage, true );
+  setOption(QWizard::DisabledBackButtonOnLastPage, true);
 
   // Set buttons namef for translate
   setButtonText(QWizard::BackButton,tr("< Back"));
@@ -17,6 +18,19 @@ Wizard::Wizard(QWidget *parent) :
   setButtonText(QWizard::CancelButton,tr("Cancel"));
 }
 //-------------------------------------------------------------------------
+
+void Wizard::reject() {
+  QMessageBox::StandardButton resBtn = QMessageBox::Yes;
+
+  resBtn = QMessageBox::question(this, "Quit",
+    tr("Do you want to quit the application?"),
+    QMessageBox::No | QMessageBox::Yes,
+    QMessageBox::Yes);
+
+  if (resBtn == QMessageBox::Yes) {
+    QWizard::reject();
+  }
+}
 
 Wizard::~Wizard() {
   delete ui;
