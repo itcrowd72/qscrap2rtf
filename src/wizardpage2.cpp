@@ -33,10 +33,12 @@ WizardPage2::~WizardPage2() {
 
 // The function checks the list. If it is empty, then the "Next" button is inactive
 bool WizardPage2::isComplete() const {
-  if (ui->listWidget->count() > 0)
-    return true;
-  else
-    return false;
+  bool bIsListEmpty = (ui->listWidget->count() > 0);
+
+  ui->pushButton_3->setEnabled(bIsListEmpty);
+  ui->pushButton_4->setEnabled(bIsListEmpty);
+
+  return bIsListEmpty;
 }
 //-------------------------------------------------------------------------
 
@@ -77,6 +79,9 @@ void WizardPage2::on_pushButton_clicked() {
   // Append file names to listWidget
   ui->listWidget->addItems(templist);
 
+  // Set first row after adding elements
+  ui->listWidget->setCurrentRow(0);
+
   // exec isComplete() function
   emit completeChanged();
 }
@@ -90,12 +95,13 @@ void WizardPage2::on_pushButton_2_clicked() {
 
   // To search for files will use QDir
   QDir qdirOpenDir (szOpenDir);
+
   // Adding to the list only files with the extension .shs
   QStringList templist = qdirOpenDir.entryList(QStringList("*.shs"));
 
   // Why is QDir adds to the list the names of files with relative paths,
   // and we need the absolute
-  for (int i=0; i<templist.count(); i++) {
+  for (int i = 0; i < templist.count(); i++) {
     // Set the absolute paths and add them to the list
     templist[i] = szOpenDir + "/" + templist[i];
   }
@@ -105,6 +111,9 @@ void WizardPage2::on_pushButton_2_clicked() {
 
   // Append file names to listWidget
   ui->listWidget->addItems(templist);
+
+  // Set first row after adding elements
+  ui->listWidget->setCurrentRow(0);
 
   // exec isComplete() function
   emit completeChanged();
