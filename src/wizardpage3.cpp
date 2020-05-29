@@ -18,7 +18,7 @@ WizardPage3::WizardPage3(QWidget *parent): QWizardPage(parent), ui(new Ui::Wizar
     }
   #else
   #ifdef Q_OS_WIN32
-    szLogoPath = qApp->applicationDirPath() + "\\pixmaps\\main.png");
+    szLogoPath = qApp->applicationDirPath() + "\\pixmaps\\main.png";
   #endif
   #endif
 

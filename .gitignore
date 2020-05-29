@@ -1,7 +1,12 @@
 /TODO
-/Makefile
-*.pro.user
-*.pro.user.*
+/Makefile*
+/*.pro.user
+/*.pro.user.*
 /build/*
-ui_*.h
+/src/ui_*.h
 /qscrap2rtf
+/.qmake.stash
+/object_script.*
+/qscrap2rtf_plugin_import.cpp
+/release/*
+/debug/*

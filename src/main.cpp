@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
   #else
   #ifdef Q_OS_WIN32
     // Check scrap2rtf
-    if (!FileExists(qApp->applicationDirPath() + "\\bin\\scrap2rtf.exe") {
+    if (!FileExists(qApp->applicationDirPath() + "\\bin\\scrap2rtf.exe")) {
       QMessageBox msgBox;
       msgBox.setText(QObject::tr("scrap2rtf not found. Please reinstall application."));
       msgBox.setIcon(QMessageBox::Critical);

@@ -6,6 +6,7 @@
 #include <QTextCodec>
 #include "helpers.h"
 
+// TODO: Fix no previous extern declaration for non-static variable 'bWorkDone'
 bool bWorkDone = false;     // if convert is done, then enable "Next" button
 
 WizardPage4::WizardPage4(QWidget *parent): QWizardPage(parent), ui(new Ui::WizardPage4) {
@@ -22,7 +23,7 @@ WizardPage4::WizardPage4(QWidget *parent): QWizardPage(parent), ui(new Ui::Wizar
     }
   #else
   #ifdef Q_OS_WIN32
-    szLogoPath = qApp->applicationDirPath()+"\\pixmaps\\main.png");
+    szLogoPath = qApp->applicationDirPath()+"\\pixmaps\\main.png";
   #endif
   #endif
 
@@ -71,7 +72,7 @@ void WizardPage4::Convert() {
       proc.start("/usr/bin/scrap2rtf", args);
     #else
     #ifdef Q_OS_WIN32
-      proc.start(qApp->applicationDirPath() + "\\bin\scrap2rtf.exe", args);
+      proc.start(qApp->applicationDirPath() + "\\bin\\scrap2rtf.exe", args);
     #endif
     #endif
 
