@@ -37,10 +37,7 @@ WizardPage4::~WizardPage4() {
 
 // The function checks the list. If it is empty, then the "Next" button is inactive
 bool WizardPage4::isComplete() const {
-  if (bWorkDone)
-    return true;
-  else
-    return false;
+  return bWorkDone;
 }
 //-------------------------------------------------------------------------
 
@@ -63,7 +60,7 @@ void WizardPage4::Convert() {
 
     // if output directory is present
     if (szOutputDir != ".") {
-      args << "--output="+szOutputDir;
+      args << "--output=" + szOutputDir;
     }
 
     // add scrap name
@@ -71,10 +68,10 @@ void WizardPage4::Convert() {
 
     // Start process
     #ifdef Q_OS_LINUX
-      proc.start("scrap2rtf",args);
+      proc.start("/usr/bin/scrap2rtf", args);
     #else
     #ifdef Q_OS_WIN32
-      proc.start(qApp->applicationDirPath()+"\\scrap2rtf",args);
+      proc.start(qApp->applicationDirPath() + "\\bin\scrap2rtf.exe", args);
     #endif
     #endif
 
@@ -98,11 +95,12 @@ void WizardPage4::Convert() {
     ui->progressBar->setValue(i);
     qApp->processEvents();
 
-    ui->label->setText( QString(tr("Process file %1 from %2")).arg(i).arg(ui->progressBar->maximum()));
+    ui->label->setText(QString(tr("Process file %1 from %2")).arg(i).arg(ui->progressBar->maximum()));
     qApp->processEvents();
   }
 
   bWorkDone = true;
+
   // exec isComplete() function
   emit completeChanged();
 }
