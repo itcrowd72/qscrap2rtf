@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../../src/main.cpp" line="51"/>
+        <source>scrap2rtf not found. Please install scrap2rtf first.</source>
+        <translation>scrap2rtf не найден. Пожалуйста, установите сначала scrap2rtf.</translation>
+    </message>
+    <message>
+        <location filename="../../src/main.cpp" line="63"/>
+        <source>scrap2rtf not found. Please reinstall application.</source>
+        <translation>scrap2rtf не найден. Пожалуйста, переустановите приложение.</translation>
+    </message>
+</context>
 <context>
     <name>Wizard</name>
     <message>
-        <location filename="../../data/wizard.ui" line="32"/>
-        <source>QScrap2rtf 0.1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/wizard.cpp" line="32"/>
+        <location filename="../../src/wizard.cpp" line="17"/>
         <source>&lt; Back</source>
         <translation>&lt; Назад</translation>
     </message>
     <message>
-        <location filename="../../src/wizard.cpp" line="33"/>
-        <location filename="../../src/wizard.cpp" line="34"/>
+        <location filename="../../src/wizard.cpp" line="18"/>
+        <location filename="../../src/wizard.cpp" line="19"/>
         <source>Next &gt;</source>
         <translation>Далее &gt;</translation>
     </message>
     <message>
-        <location filename="../../src/wizard.cpp" line="35"/>
+        <location filename="../../src/wizard.cpp" line="20"/>
         <source>Finish</source>
         <translation>Готово</translation>
     </message>
     <message>
-        <location filename="../../src/wizard.cpp" line="36"/>
+        <location filename="../../src/wizard.cpp" line="21"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
+    </message>
+    <message>
+        <location filename="../../src/wizard.cpp" line="29"/>
+        <source>Do you want to quit the application?</source>
+        <translation>Вы действительно хотите выйти из приложения?</translation>
+    </message>
+    <message>
+        <location filename="../../data/wizard.ui" line="32"/>
+        <source>QScrap2rtf 0.2</source>
+        <translation>QScrap2rtf 0.2</translation>
     </message>
 </context>
 <context>
@@ -35,7 +53,7 @@
     <message>
         <location filename="../../data/wizardpage1.ui" line="14"/>
         <source>WizardPage</source>
-        <translation type="unfinished"></translation>
+        <translation>WizardPage</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage1.ui" line="32"/>
@@ -57,12 +75,12 @@
     <message>
         <location filename="../../data/wizardpage2.ui" line="14"/>
         <source>WizardPage</source>
-        <translation type="unfinished"></translation>
+        <translation>WizardPage</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage2.ui" line="17"/>
         <source>QScrap2rtf</source>
-        <translation type="unfinished"></translation>
+        <translation>QScrap2rtf</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage2.ui" line="20"/>
@@ -80,27 +98,27 @@
         <translation>Добавить папку</translation>
     </message>
     <message>
-        <location filename="../../data/wizardpage2.ui" line="68"/>
+        <location filename="../../data/wizardpage2.ui" line="71"/>
         <source>Remove file</source>
         <translation>Удалить файл</translation>
     </message>
     <message>
-        <location filename="../../data/wizardpage2.ui" line="81"/>
+        <location filename="../../data/wizardpage2.ui" line="87"/>
         <source>Clear list</source>
         <translation>Очистить список</translation>
     </message>
     <message>
-        <location filename="../../src/wizardpage2.cpp" line="89"/>
+        <location filename="../../src/wizardpage2.cpp" line="76"/>
         <source>Add scraps</source>
         <translation>Добавить файлы</translation>
     </message>
     <message>
-        <location filename="../../src/wizardpage2.cpp" line="89"/>
+        <location filename="../../src/wizardpage2.cpp" line="76"/>
         <source>Scrap Files (*.shs)</source>
         <translation>Фрагменты (*.shs)</translation>
     </message>
     <message>
-        <location filename="../../src/wizardpage2.cpp" line="106"/>
+        <location filename="../../src/wizardpage2.cpp" line="101"/>
         <source>Open Directory</source>
         <translation>Выбрать директорию</translation>
     </message>
@@ -110,12 +128,12 @@
     <message>
         <location filename="../../data/wizardpage3.ui" line="14"/>
         <source>WizardPage</source>
-        <translation type="unfinished"></translation>
+        <translation>WizardPage</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage3.ui" line="17"/>
         <source>QScrap2rtf</source>
-        <translation type="unfinished"></translation>
+        <translation>QScrap2rtf</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage3.ui" line="20"/>
@@ -138,7 +156,7 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Каталог для обработанных фрагментов&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/wizardpage3.cpp" line="68"/>
+        <location filename="../../src/wizardpage3.cpp" line="49"/>
         <source>Output Directory</source>
         <translation>Выберите каталог</translation>
     </message>
@@ -148,12 +166,12 @@
     <message>
         <location filename="../../data/wizardpage4.ui" line="14"/>
         <source>WizardPage</source>
-        <translation type="unfinished"></translation>
+        <translation>WizardPage</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage4.ui" line="17"/>
         <source>QScrap2rtf</source>
-        <translation type="unfinished"></translation>
+        <translation>QScrap2rtf</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage4.ui" line="20"/>
@@ -171,7 +189,7 @@
         <translation>Журнал</translation>
     </message>
     <message>
-        <location filename="../../src/wizardpage4.cpp" line="101"/>
+        <location filename="../../src/wizardpage4.cpp" line="99"/>
         <source>Process file %1 from %2</source>
         <translation>Обрабатываю %1 файл из %2</translation>
     </message>
@@ -181,12 +199,12 @@
     <message>
         <location filename="../../data/wizardpage5.ui" line="14"/>
         <source>WizardPage</source>
-        <translation type="unfinished"></translation>
+        <translation>WizardPage</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage5.ui" line="26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QScrap2rtf is open source, cross platform software available for all major operating systems under the GNU General Public License. You can use QScrap2rtf on any computer, including a computer in a commercial organization. You don&apos;t need to register or pay for QScrap2rtf.&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;http://code.google.com/p/scrap2rtf/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://code.google.com/p/scrap2rtf/&lt;/span&gt;&lt;/a&gt; to check for updates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QScrap2rtf это свободное, кросс-платформенное программное обеспечение доступное для большинства операционных систем под лицензией GNU General Public License. Вы можете использовать QScrap2rtf на любом компьютере, включая компьютеры коммерческих организаций. Вам не нужно нигде регистрировать или платить за QScrap2rtf.&lt;/p&gt;&lt;p&gt;Посетите &lt;a href=&quot;http://code.google.com/p/scrap2rtf/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://code.google.com/p/scrap2rtf/&lt;/span&gt;&lt;/a&gt; для проверки обновлений.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QScrap2rtf is open source, cross platform software available for all major operating systems under the GNU General Public License. You can use QScrap2rtf on any computer, including a computer in a commercial organization. You don&apos;t need to register or pay for QScrap2rtf.&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://github.com/ivnish/qscrap2rtf&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/ivnish/qscrap2rtf&lt;/span&gt;&lt;/a&gt; to check for updates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QScrap2rtf это свободное, кросс-платформенное программное обеспечение доступное для большинства операционных систем под лицензией GNU General Public License. Вы можете использовать QScrap2rtf на любом компьютере, включая компьютеры коммерческих организаций. Вам не нужно нигде регистрировать или платить за QScrap2rtf.&lt;/p&gt;&lt;p&gt;Посетите &lt;a href=&quot;https://github.com/ivnish/qscrap2rtf&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/ivnish/qscrap2rtf&lt;/span&gt;&lt;/a&gt; для проверки обновлений.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../data/wizardpage5.ui" line="45"/>
